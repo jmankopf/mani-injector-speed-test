@@ -1,0 +1,27 @@
+{
+  "name": "mani-breakout",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack-dev-server --host 0.0.0.0",
+    "build": "rimraf dist && webpack --config webpack.production.config.js",
+    "build-esnext": "rimraf dist && webpack --config webpack.production.esnext.config.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "rimraf": "^2.6.3",
+    "ts-loader": "^6.0.2",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.5.1",
+    "webpack": "^4.32.2",
+    "webpack-cdn-plugin": "^3.1.1",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.1"
+  },
+  "dependencies": {
+    "inversify": "^5.0.1",
+    "mani-injector": "file:../../mani-lib/mani-injector",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^3.2.0"
+  }
+}
