@@ -1,10 +1,9 @@
 {
-  "name": "mani-breakout",
+  "name": "mani-injector-speed-test",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --host 0.0.0.0",
-    "build": "rimraf dist && webpack --config webpack.production.config.js",
-    "build-esnext": "rimraf dist && webpack --config webpack.production.esnext.config.js"
+    "build": "rimraf dist && webpack --config webpack.config.js"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.3",
@@ -20,8 +19,9 @@
   },
   "dependencies": {
     "inversify": "^5.0.1",
-    "mani-injector": "file:../../mani-lib/mani-injector",
+    "mani-injector": "0.0.1",
     "reflect-metadata": "^0.1.13",
-    "tsyringe": "^3.2.0"
+    "tsyringe": "^3.2.0",
+    "typed-inject": "^2.1.0"
   }
 }
